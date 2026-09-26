@@ -1,0 +1,259 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="100%" height="100%">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e293b" />
+      <stop offset="100%" stop-color="#0b0f19" />
+    </linearGradient>
+
+    <linearGradient id="agentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b82f6" />
+      <stop offset="100%" stop-color="#1d4ed8" />
+    </linearGradient>
+
+    <linearGradient id="bronzeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#b45309" />
+      <stop offset="100%" stop-color="#78350f" />
+    </linearGradient>
+
+    <linearGradient id="silverGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#64748b" />
+      <stop offset="100%" stop-color="#334155" />
+    </linearGradient>
+
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b" />
+      <stop offset="100%" stop-color="#b45309" />
+    </linearGradient>
+
+    <linearGradient id="evalGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="dropGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+
+    <filter id="accentGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="8" flood-color="#38bdf8" flood-opacity="0.4" />
+    </filter>
+
+    <marker id="arrow" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#38bdf8" />
+    </marker>
+    <marker id="arrow-green" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#34d399" />
+    </marker>
+    <marker id="arrow-amber" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#fbbf24" />
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#bgGrad)" />
+
+  <!-- Grid overlay for tech look -->
+  <g opacity="0.06">
+    <path d="M 0,100 L 1200,100 M 0,200 L 1200,200 M 0,300 L 1200,300 M 0,400 L 1200,400 M 0,500 L 1200,500 M 0,600 L 1200,600 M 0,700 L 1200,700" stroke="#ffffff" stroke-width="1" />
+    <path d="M 100,0 L 100,800 M 200,0 L 200,800 M 300,0 L 300,800 M 400,0 L 400,800 M 500,0 L 500,800 M 600,0 L 600,800 M 700,0 L 700,800 M 800,0 L 800,800 M 900,0 L 900,800 M 1000,0 L 1000,800 M 1100,0 L 1100,800" stroke="#ffffff" stroke-width="1" />
+  </g>
+
+  <!-- Top Header Title -->
+  <text x="60" y="55" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="26" font-weight="800" fill="#ffffff" letter-spacing="0.5">DATAFORM MEDALLION ARCHITECTURE AGENT</text>
+  <text x="60" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" fill="#94a3b8">End-to-End Governance, Pipeline Orchestration, BigQuery Transformation &amp; Quality Flywheel Evals</text>
+  
+  <rect x="940" y="40" width="200" height="34" rx="17" fill="#1e293b" stroke="#334155" />
+  <circle cx="958" cy="57" r="6" fill="#10b981" />
+  <text x="974" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600" fill="#f8fafc">Agent Registry Active</text>
+
+  <!-- ========================================== -->
+  <!-- 1. LEFT COLUMN: ADK AGENT & REGISTRY -->
+  <!-- ========================================== -->
+  <g transform="translate(60, 120)">
+    <!-- Container Card -->
+    <rect width="320" height="620" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1.5" filter="url(#dropGlow)" />
+    
+    <!-- Header -->
+    <rect width="320" height="60" rx="16" fill="url(#agentGrad)" />
+    <rect y="45" width="320" height="15" fill="url(#agentGrad)" />
+    <text x="20" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700" fill="#ffffff">🤖 Google ADK Agent</text>
+    <text x="210" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#bfdbfe">gemini-2.5-flash</text>
+
+    <!-- Sub-block: Agent Registry -->
+    <rect x="16" y="78" width="288" height="92" rx="10" fill="#0f172a" stroke="#2563eb" stroke-dasharray="4 4" />
+    <text x="30" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#60a5fa">Agent Registry (GCP Preview)</text>
+    <text x="30" y="122" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#94a3b8">Resource: <tspan fill="#e2e8f0">dataform-medallion-agent</tspan></text>
+    <text x="30" y="140" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#94a3b8">Protocol: <tspan fill="#38bdf8">A2A v0.3.0</tspan> | Region: <tspan fill="#e2e8f0">us-west1</tspan></text>
+    <text x="30" y="156" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#34d399">✔ 4 Cataloged Skills &amp; Capabilities</text>
+
+    <!-- Sub-block: Core Tool Stack -->
+    <text x="20" y="196" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700" fill="#f8fafc">Autonomous Tools Suite:</text>
+    
+    <!-- Tool 1 -->
+    <rect x="16" y="210" width="288" height="66" rx="8" fill="#0f172a" stroke="#334155" />
+    <text x="30" y="232" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#e2e8f0">generate_medallion_pipeline</text>
+    <text x="30" y="250" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#94a3b8">Scaffolds workflow_settings.yaml and</text>
+    <text x="30" y="264" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#94a3b8">Bronze, Silver, &amp; Gold .sqlx layer definitions</text>
+
+    <!-- Tool 2 -->
+    <rect x="16" y="286" width="288" height="66" rx="8" fill="#0f172a" stroke="#334155" />
+    <text x="30" y="308" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#f59e0b">preview_gold_transformation</text>
+    <text x="30" y="326" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#94a3b8">Simulates and validates uppercase customer</text>
+    <text x="30" y="340" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#94a3b8">casing logic prior to production execution</text>
+
+    <!-- Tool 3 -->
+    <rect x="16" y="362" width="288" height="66" rx="8" fill="#0f172a" stroke="#334155" />
+    <text x="30" y="384" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#34d399">evaluate_dataform_definitions</text>
+    <text x="30" y="402" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#94a3b8">Static schema validation, assertion rules check,</text>
+    <text x="30" y="416" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#94a3b8">and UPPER(name) syntax verification</text>
+
+    <!-- Tool 4 -->
+    <rect x="16" y="438" width="288" height="66" rx="8" fill="#0f172a" stroke="#334155" />
+    <text x="30" y="460" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#34d399">evaluate_live_medallion_tables</text>
+    <text x="30" y="478" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#94a3b8">Real-time BigQuery audit: verifies 0 data loss</text>
+    <text x="30" y="492" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#94a3b8">and 100% customer name uppercase compliance</text>
+
+    <!-- Agent Identity Info -->
+    <rect x="16" y="520" width="288" height="82" rx="8" fill="#172554" stroke="#1d4ed8" />
+    <text x="30" y="542" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#93c5fd">SECURITY &amp; IDENTITY (Least Privilege)</text>
+    <text x="30" y="560" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" fill="#e2e8f0">SA: <tspan fill="#38bdf8">antigravity-sa@qwiklabs...</tspan></text>
+    <text x="30" y="576" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" fill="#e2e8f0">Role: <tspan fill="#a7f3d0">roles/bigquery.admin</tspan></text>
+    <text x="30" y="592" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#38bdf8">Zero privilege escalation to project Owner</text>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- 2. MIDDLE COLUMN: MEDALLION BIGQUERY LAYERS -->
+  <!-- ========================================== -->
+  <g transform="translate(420, 120)">
+    <!-- Container Card -->
+    <rect width="420" height="620" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1.5" filter="url(#dropGlow)" />
+    
+    <!-- Header -->
+    <rect width="420" height="60" rx="16" fill="#0f172a" />
+    <rect y="45" width="420" height="15" fill="#0f172a" />
+    <text x="24" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700" fill="#ffffff">📊 BigQuery Medallion Architecture</text>
+    <text x="320" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600" fill="#94a3b8">Dataform v3.0</text>
+
+    <!-- LAYER 1: BRONZE -->
+    <g transform="translate(20, 80)">
+      <rect width="380" height="120" rx="10" fill="#1c1917" stroke="#b45309" stroke-width="1.5" />
+      <rect x="0" y="0" width="380" height="28" rx="10" fill="url(#bronzeGrad)" />
+      <rect x="0" y="16" width="380" height="12" fill="url(#bronzeGrad)" />
+      <text x="16" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#ffffff">🥉 BRONZE LAYER (Raw Ingestion / Lineage)</text>
+      
+      <text x="16" y="48" font-family="monospace" font-size="11" fill="#fde68a">customer_data.customers -> bronze_customers.sqlx</text>
+      <text x="16" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#cbd5e1">• Type: <tspan fill="#e2e8f0">declaration</tspan> | Ingestion Tracking: <tspan fill="#38bdf8">_ingested_at</tspan></text>
+      <text x="16" y="84" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#cbd5e1">• Raw source schema fidelity (20 raw customer records)</text>
+      <text x="16" y="104" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" fill="#fbbf24">Sample: "Arthur Pendelton", "Kenji Sato", "Sophia Chen"</text>
+    </g>
+
+    <!-- Flow Arrow 1 -->
+    <path d="M 210, 202 L 210, 228" stroke="#38bdf8" stroke-width="2.5" marker-end="url(#arrow)" />
+    <text x="220" y="220" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="600" fill="#38bdf8">Cleanse &amp; Deduplicate</text>
+
+    <!-- LAYER 2: SILVER -->
+    <g transform="translate(20, 235)">
+      <rect width="380" height="135" rx="10" fill="#0f172a" stroke="#64748b" stroke-width="1.5" />
+      <rect x="0" y="0" width="380" height="28" rx="10" fill="url(#silverGrad)" />
+      <rect x="0" y="16" width="380" height="12" fill="url(#silverGrad)" />
+      <text x="16" y="20" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#ffffff">🥈 SILVER LAYER (Standardized &amp; Incremental)</text>
+      
+      <text x="16" y="48" font-family="monospace" font-size="11" fill="#cbd5e1">silver_dataset.silver_customers</text>
+      <text x="16" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#94a3b8">• Type: <tspan fill="#e2e8f0">incremental</tspan> | Deduplication: <tspan fill="#38bdf8">uniqueKey: ["customer_id"]</tspan></text>
+      <text x="16" y="84" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#94a3b8">• Quality Assertions: <tspan fill="#34d399">nonNull: ["customer_id", "email"]</tspan></text>
+      <text x="16" y="102" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#94a3b8">• Cleaning: <tspan fill="#e2e8f0">TRIM(name)</tspan>, <tspan fill="#e2e8f0">LOWER(email)</tspan>, <tspan fill="#e2e8f0">SAFE.PARSE_DATE</tspan></text>
+      <text x="16" y="122" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" fill="#34d399">✔ 20/20 Records Cleansed (0 Dropped)</text>
+    </g>
+
+    <!-- Flow Arrow 2 -->
+    <path d="M 210, 372 L 210, 400" stroke="#f59e0b" stroke-width="2.5" marker-end="url(#arrow-amber)" />
+    <text x="220" y="392" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" font-weight="700" fill="#f59e0b">UPPER(name) AS name_upper</text>
+
+    <!-- LAYER 3: GOLD -->
+    <g transform="translate(20, 408)">
+      <rect width="380" height="190" rx="10" fill="#1c1917" stroke="#f59e0b" stroke-width="2" filter="url(#accentGlow)" />
+      <rect x="0" y="0" width="380" height="30" rx="10" fill="url(#goldGrad)" />
+      <rect x="0" y="18" width="380" height="12" fill="url(#goldGrad)" />
+      <text x="16" y="21" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="800" fill="#ffffff">🥇 GOLD LAYER (Curated Analytics &amp; All Capitals)</text>
+      
+      <text x="16" y="52" font-family="monospace" font-size="11" fill="#fde68a">gold_dataset.gold_customers</text>
+      <text x="16" y="70" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#fef3c7">• Type: <tspan fill="#ffffff" font-weight="700">table</tspan> (Curated Customer Dimension)</text>
+      <text x="16" y="90" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="700" fill="#fbbf24">⭐ KEY REQUIREMENT: ALL CUSTOMER NAMES CAPITALIZED</text>
+      
+      <!-- Gold Output Box -->
+      <rect x="16" y="100" width="348" height="75" rx="6" fill="#0f172a" stroke="#78350f" />
+      <text x="26" y="118" font-family="monospace" font-size="10.5" fill="#38bdf8">SELECT customer_id, UPPER(name) AS name_upper...</text>
+      <text x="26" y="136" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" fill="#34d399">✔ 'Arthur Pendelton'  ➔ 'ARTHUR PENDELTON'</text>
+      <text x="26" y="152" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" fill="#34d399">✔ 'Sophia Chen'       ➔ 'SOPHIA CHEN'</text>
+      <text x="26" y="167" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" fill="#34d399">✔ 'Kenji Sato'        ➔ 'KENJI SATO'</text>
+    </g>
+  </g>
+
+  <!-- ========================================== -->
+  <!-- 3. RIGHT COLUMN: EVALS & QUALITY FLYWHEEL -->
+  <!-- ========================================== -->
+  <g transform="translate(880, 120)">
+    <!-- Container Card -->
+    <rect width="260" height="620" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1.5" filter="url(#dropGlow)" />
+    
+    <!-- Header -->
+    <rect width="260" height="60" rx="16" fill="url(#evalGrad)" />
+    <rect y="45" width="260" height="15" fill="url(#evalGrad)" />
+    <text x="20" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700" fill="#ffffff">🎯 Quality Flywheel Evals</text>
+    <text x="188" y="38" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#a7f3d0">9/9 PASS</text>
+
+    <!-- Eval Metric 1 -->
+    <g transform="translate(16, 75)">
+      <rect width="228" height="110" rx="10" fill="#0f172a" stroke="#059669" />
+      <text x="14" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#34d399">Capitalization Compliance</text>
+      <text x="14" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="800" fill="#ffffff">100%</text>
+      <text x="100" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#34d399">ALL CAPS</text>
+      <text x="14" y="74" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">COUNTIF(name != UPPER(name)) = 0</text>
+      <text x="14" y="92" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" fill="#a7f3d0">✔ 20/20 Rows Verified in BigQuery</text>
+    </g>
+
+    <!-- Eval Metric 2 -->
+    <g transform="translate(16, 200)">
+      <rect width="228" height="110" rx="10" fill="#0f172a" stroke="#059669" />
+      <text x="14" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#34d399">Pipeline Data Loss Ratio</text>
+      <text x="14" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="800" fill="#ffffff">0.00%</text>
+      <text x="110" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#34d399">ZERO LOSS</text>
+      <text x="14" y="74" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">count(Bronze) = count(Silver) = count(Gold)</text>
+      <text x="14" y="92" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" fill="#a7f3d0">✔ Exact 20 Rows Preserved</text>
+    </g>
+
+    <!-- Eval Metric 3 -->
+    <g transform="translate(16, 325)">
+      <rect width="228" height="110" rx="10" fill="#0f172a" stroke="#059669" />
+      <text x="14" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#34d399">Data Quality Assertions</text>
+      <text x="14" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="28" font-weight="800" fill="#ffffff">100%</text>
+      <text x="100" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#34d399">PASSING</text>
+      <text x="14" y="74" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10" fill="#94a3b8">uniqueKey &amp; nonNull constraints</text>
+      <text x="14" y="92" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" fill="#a7f3d0">✔ 0 Nulls, 0 Duplicate IDs</text>
+    </g>
+
+    <!-- Master Test Runner Badge -->
+    <g transform="translate(16, 450)">
+      <rect width="228" height="150" rx="10" fill="#0f172a" stroke="#334155" />
+      <text x="14" y="26" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="700" fill="#f8fafc">Automated Test Suites:</text>
+      
+      <text x="14" y="48" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#94a3b8">• Unit Tests (6/6):</text>
+      <text x="24" y="66" font-family="monospace" font-size="10" fill="#38bdf8">test_dataform_transformations.py</text>
+      
+      <text x="14" y="90" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" fill="#94a3b8">• BigQuery Evals (3/3):</text>
+      <text x="24" y="108" font-family="monospace" font-size="10" fill="#38bdf8">test_bigquery_live_eval.py</text>
+      
+      <rect x="14" y="118" width="200" height="24" rx="4" fill="#064e3b" />
+      <text x="32" y="134" font-family="monospace" font-size="11" font-weight="700" fill="#34d399">./run_all_evals.sh -> OK</text>
+    </g>
+  </g>
+
+  <!-- Connectors: Agent -> Bronze -->
+  <path d="M 380, 240 C 400, 240 400, 200 420, 200" stroke="#38bdf8" stroke-width="2" stroke-dasharray="4 4" />
+  
+  <!-- Connectors: Gold -> Evals -->
+  <path d="M 840, 500 C 860, 500 860, 255 880, 255" stroke="#34d399" stroke-width="2" marker-end="url(#arrow-green)" />
+</svg>
